@@ -150,3 +150,26 @@ padding:30px;
 text-align:center;
 color:#6b7c93;
 }
+
+.mobile-book {
+  display:none;
+}
+
+@media (max-width:768px){
+  .mobile-book{
+    display:block;
+    position:fixed;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:linear-gradient(90deg,#0f62fe,#00c6ff);
+    padding:14px 40px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 0 30px rgba(0,198,255,0.5);
+    z-index:999;
+  }
+}
+
