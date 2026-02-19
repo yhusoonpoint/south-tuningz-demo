@@ -17,7 +17,7 @@
   <img src="images/logo.jpeg" class="logo">
   <h1>Precision Performance Engineering</h1>
   <p>ECU Remapping • Performance Upgrades • Professional Installations</p>
-  <a href="#contact" class="btn">Book Consultation</a>
+  <a href="#booking" class="btn">Book Now</a>
 </header>
 
 <section class="about">
@@ -91,15 +91,54 @@
   </iframe>
 </section>
 
-<section id="contact" class="contact">
+<section id="booking" class="booking">
   <h2>Book Your Slot</h2>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <textarea name="message" rows="5" placeholder="Tell us about your vehicle"></textarea>
-    <button type="submit">Send Enquiry</button>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form">
+
+    <input type="text" name="full_name" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <div class="form-grid">
+      <input type="text" name="make" placeholder="Car Make (e.g. BMW)" required>
+      <input type="text" name="model" placeholder="Model (e.g. 330d)" required>
+    </div>
+
+    <div class="form-grid">
+      <input type="text" name="engine_size" placeholder="Engine Size (e.g. 3.0L)" required>
+
+      <select name="fuel_type" required>
+        <option value="">Fuel Type</option>
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>Hybrid</option>
+        <option>Electric</option>
+      </select>
+    </div>
+
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Engine Remapping</option>
+      <option>Gearbox Tuning</option>
+      <option>Dyno Testing</option>
+      <option>Exhaust Fabrication</option>
+      <option>DPF Cleaning</option>
+      <option>Diagnostics</option>
+      <option>Other</option>
+    </select>
+
+    <div class="form-grid">
+      <input type="date" name="preferred_date" required>
+      <input type="time" name="preferred_time" required>
+    </div>
+
+    <textarea name="additional_info" rows="4" placeholder="Additional Information (optional)"></textarea>
+
+    <button type="submit">Request Booking</button>
+
   </form>
 </section>
+
 
 <footer>
   © 2026 South Tuningz. All Rights Reserved.
