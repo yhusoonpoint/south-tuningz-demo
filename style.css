@@ -173,3 +173,32 @@ color:#6b7c93;
   }
 }
 
+@media (max-width: 768px) {
+
+  section {
+    padding: 70px 6%;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 16px 30px;
+    font-size: 1rem;
+  }
+
+  .map iframe {
+    height: 250px;
+  }
+
+}
+
